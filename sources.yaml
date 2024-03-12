@@ -10,7 +10,7 @@ spec:
   serviceAccountName: flux-applier
   sourceRef:
     kind: GitRepository
-    name: lscsde
+    name: lscsde-components
     namespace: lscsde-config
   timeout: 1m0s
   wait: false
