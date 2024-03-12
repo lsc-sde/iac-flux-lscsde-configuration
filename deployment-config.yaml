@@ -6,7 +6,7 @@ data:
   lscsde_components_branch: ${lscsde_components_branch}
   environment_name: ${environment_name}
   
-  ohdsi_branch: "release/0.1.34" 
+  ohdsi_branch: "release/0.1.35" 
   ohdsi_chart_version: "0.1.21"
   
   secrets_distributor_chart_version: "0.1.2"
