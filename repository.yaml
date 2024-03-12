@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: lscsde-components
+spec:
+  interval: 1m0s
+  ref:
+    branch: ${lscsde_components_branch}
+  timeout: 60s
+  url: https://github.com/lsc-sde/iac-flux-lscsde-components
