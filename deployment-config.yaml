@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: deployment-config
 data:
-  lsc_components_branch: ${lsc_components_branch}
+  lscsde_components_branch: ${lscsde_components_branch}
   environment_name: ${environment_name}
   
   ohdsi_branch: "release/0.1.22" 
