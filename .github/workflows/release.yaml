@@ -12,3 +12,26 @@ jobs:
     with:
       directory: iac/flux/lscsde-configuration
     secrets: inherit
+  
+  update-dev-repo-branch:
+    uses: lsc-sde/lsc-sde/.github/workflows/update-yaml.yaml@main
+    needs:
+    - package
+    with:
+      repository: lsc-sde/iac-flux-lscsde
+      path: clusters/prod/lscsde/repository.yaml
+      yamlPath: .spec.ref.branch
+      newValue: "release/${{ needs.semver.outputs.GitVersion_SemVer }}"
+    secrets: inherit
+  
+  update-prod-repo-branch:
+    uses: lsc-sde/lsc-sde/.github/workflows/update-yaml.yaml@main
+    needs:
+    - package
+    - update-dev-repo-branch
+    with:
+      repository: lsc-sde/iac-flux-lscsde
+      path: clusters/dev/lscsde/repository.yaml
+      yamlPath: .spec.ref.branch
+      newValue: "release/${{ needs.semver.outputs.GitVersion_SemVer }}"
+    secrets: inherit
