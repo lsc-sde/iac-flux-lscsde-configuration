@@ -21,7 +21,7 @@ jobs:
       repository: lsc-sde/iac-flux-lscsde
       path: clusters/prod/lscsde/repository.yaml
       yamlPath: .spec.ref.branch
-      newValue: "release/${{ needs.semver.outputs.GitVersion_SemVer }}"
+      newValue: "release/${{ needs.package.outputs.semver }}"
     secrets: inherit
   
   update-prod-repo-branch:
@@ -33,5 +33,5 @@ jobs:
       repository: lsc-sde/iac-flux-lscsde
       path: clusters/dev/lscsde/repository.yaml
       yamlPath: .spec.ref.branch
-      newValue: "release/${{ needs.semver.outputs.GitVersion_SemVer }}"
+      newValue: "release/${{ needs.package.outputs.semver }}"
     secrets: inherit
