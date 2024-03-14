@@ -23,4 +23,5 @@ jobs:
       yamlPath: .spec.ref.branch
       newValue: "release/${{ needs.package.outputs.semver }}"
     secrets: inherit
+    
   
