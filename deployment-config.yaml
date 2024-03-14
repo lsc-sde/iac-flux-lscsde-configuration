@@ -32,7 +32,7 @@ data:
 
   keycloak_branch: "release/0.1.58"
 
-  jupyter_branch: "release/0.2.45"
+  jupyter_branch: "release/0.2.47"
   jupyter_chart_version: "3.2.1"
 
   analytics_workspace_management_chart_version: "0.1.10"
