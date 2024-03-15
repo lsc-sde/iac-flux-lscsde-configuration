@@ -22,7 +22,7 @@ data:
   keda_branch: "release/0.1.33"
   keda_chart_version: "2.13.1"
   keycloak_branch: "release/0.1.59"
-  jupyter_branch: "release/0.2.48"
+  jupyter_branch: "release/0.2.49"
   jupyter_chart_version: "3.2.1"
   analytics_workspace_management_chart_version: "0.1.11"
   analytics_workspace_management_branch: "release/0.1.7"
