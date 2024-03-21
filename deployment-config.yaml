@@ -5,6 +5,7 @@ metadata:
 data:
   lscsde_components_branch: ${lscsde_components_branch}
   environment_name: ${environment_name}
+  nginx_ingress_class_name: ${nginx_ingress_class_name}
   ohdsi_branch: "release/0.1.52"
   ohdsi_chart_version: "0.1.28"
   secrets_distributor_chart_version: "0.2.2"
