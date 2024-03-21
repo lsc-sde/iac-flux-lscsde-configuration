@@ -6,7 +6,6 @@ data:
   lscsde_components_branch: ${lscsde_components_branch}
   environment_name: ${environment_name}
   nginx_ingress_class_name: ${nginx_ingress_class_name}
-  nginx_ingress_suspended: "${nginx_ingress_suspended}"
   jupyter_storage_provisioner: ${jupyter_storage_provisioner}
   ohdsi_branch: "release/0.1.54"
   ohdsi_chart_version: "0.1.28"
